@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // var data = {
+        //     "id": 1,
+        //     "firstname": "Test",
+        //     "lastname": "lastname",
+        //     "email": "test@gmail.com",
+        //     "password": "1234",
+        //     "confirmpassword": "1234"
+        // }
+
+
+        // var data2 = {
+        //     "id": 2,
+        //     "firstname": "updated",
+        //     "lastname": "success",
+        //     "email": "success@gmail.com",
+        //     "password": "12347029457",
+        //     "confirmpassword": "12347029457"
+        // }
+
+        const baseUrl = "http://localhost:8080/api/user";
+        const dataId = 1;
+
+        
+        var res = fetch(`${baseUrl}/get`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+            .then(res => res.json())
+            .then(json => console.table(json))  //get 
+
+        //    fetch(`${baseUrl}/new`, {
+        //         method: "POST",
+        //         headers: {
+        //             "Content-Type": "application/json"
+        //         },
+        //         body: JSON.stringify(data2)
+        //     })
+
+        //         .then(res => res.json())
+        //         .then(json => console.table(json))
+
+        // fetch(`${baseUrl}/update/${dataId}`,{
+        //     method :"PUT",
+        //     headers:{
+        //         "Content-Type":"application/json"
+        //     },
+        //     body:JSON.stringify(data2)
+        // })
+
+
+
+    //  fetch(`${baseUrl}/delete/${dataId}`,{
+    //         method :"DELETE",
+    //         headers:{
+    //             "Content-Type":"application/json"
+    //         },
+    //         body:JSON.stringify(data2)
+    //     })
+
+
+
+
+    
+
+    </script>
+</body>
+
+</html>

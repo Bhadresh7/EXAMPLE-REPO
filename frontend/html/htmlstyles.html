@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="div" style="font-size: 3rem;">This is an exampel for html styles</div>
+    <br>
+    <button>click to change color</button>
+
+
+<select name="" id="">
+    <option value="">red</option>
+</select>
+
+    
+    <script>
+        var div = document.getElementsByClassName('div')
+        var btn = document.getElementsByTagName('button')
+
+
+        const arr = ["red", "green", "yellow", "orange", "purple"];
+
+
+
+        btn[0].addEventListener('click', () => {
+            var color = Math.floor(Math.random() * arr.length)
+            console.log(color)
+            div[0].style.color = `${arr[color]}`;
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

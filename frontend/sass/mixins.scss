@@ -1,0 +1,25 @@
+@mixin mybtn{
+    border: none;
+    font-size: 2rem;
+    padding: 4rem;
+}
+
+
+.btn{
+    @include mybtn;
+    background-color: red;
+}
+
+.div1{
+    background-color: blue;
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.div2{
+    @extend .div1;
+ 
+}
+
+

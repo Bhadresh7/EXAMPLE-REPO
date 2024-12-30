@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="div">
+        This is a div
+    </div>
+
+    <script>
+
+        function colorChanger() {
+            myDiv[0].style.backgroundColor = "orange";
+        }
+
+        var myDiv = document.getElementsByClassName("div")
+        myDiv[0].addEventListener('click', () => {
+            console.log('clicked')
+            colorChanger()
+
+        })
+        myDiv[0].removeEventListener('click', () => colorChanger());
+
+
+        // setInterval(() => {
+        //     window.alert("alerting")
+        // }, )
+
+
+        // if(window.confirm("Are you sure")){
+        //     window.close();
+        // }else{
+        //     window.alert("Not closed")
+        // }
+
+
+        // let a= parseInt(window.prompt("Enter a"))
+        // let b =parseInt(window.prompt("Enter b"))
+        // let c= a+b;
+        // alert(c)
+
+
+
+
+
+    </script>
+</body>
+
+</html>

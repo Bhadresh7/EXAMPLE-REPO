@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: auto;
+}
+
+.div p {
+  color: red;
+}
+.div button {
+  padding: 2rem;
+}/*# sourceMappingURL=styles.css.map */

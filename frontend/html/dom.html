@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="divClass">This is div one </div>
+    <div id="divClass">This is div two </div>
+    <div name="divClass">this is div three</div>
+
+
+    <script>
+        // var divTag = document.getElementsByTagName('div')
+        // console.log(divTag)
+
+
+        // var divByClass = document.getElementsByClassName('divClass')
+        // console.log(divByClass[0])
+
+
+        // var divById = document.getElementById('divId');
+        // console.log(divById)
+
+
+        // var divByName = document.getElementsByName('divName');
+        // console.log(divByName)
+
+
+
+
+        var usingQuerySelector = document.querySelector('.divClass')
+        console.log(usingQuerySelector)
+
+
+        var usingQuerySelectorAll = document.querySelectorAll('.divClass')
+        console.log(usingQuerySelectorAll)
+
+
+    </script>
+
+</body>
+
+</html>

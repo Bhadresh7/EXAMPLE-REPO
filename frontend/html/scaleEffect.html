@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .parent {
+        height: 300px;
+        width: 300px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+    }
+
+    .child {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        transition: all 1.1s;
+    }
+
+
+    .parent:hover .child{
+        transform: scale(1.2);
+    }
+
+    .bg-image {
+        background-image: url(/images/wallpaper.jpg);
+    }
+</style>
+
+
+<body>
+
+
+    <div class="wrapper">
+        <div class="parent">
+            <div class="child bg-image"> </div>
+            this is a parent div
+        </div>
+    </div>
+
+</body>
+
+</html>
